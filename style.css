@@ -1,0 +1,134 @@
+/***
+Theme Name: Dumketo
+Author: Hasan Ahmed Jobayer
+Author URI: http://dumketo.github.io/Resume/
+Version: 5
+Text Domain: Dumketo
+***/
+
+@keyframes pulsate { 0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;} 50% {opacity: 1.0;} 100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;} }
+@keyframes opacityPulse { 0% {opacity: 0.0;} 50% {opacity: 1.0;} 100% {opacity: 0.0;} }
+@keyframes elementor-animation-pulse{ 25%{transform:scale(1.1)}75%{transform:scale(0.9)} }
+.elementor-animation-pulse:active,.elementor-animation-pulse:focus,.elementor-animation-pulse:hover{animation-name:elementor-animation-pulse;animation-duration:1s;animation-timing-function:linear;animation-iteration-count:infinite}
+@keyframes elementor-animation-push{ 50%{transform:scale(0.8)}100%{transform:scale(1)} }
+.elementor-animation-push:active,.elementor-animation-push:focus,.elementor-animation-push:hover{animation-name:elementor-animation-push;animation-duration:.3s;animation-timing-function:linear;animation-iteration-count:1}
+@keyframes floating{0%,to{transform:translate(0,0)}65%{transform:translate(0,15px)}}@keyframes animatedBackground{0%{background-position:0 0}to{background-position:100% 0}}
+
+html{ overflow-x: hidden;scroll-behavior: smooth; }
+body { margin: 0;padding: 0;background: url('img/body-bg.jpg') center center no-repeat;background-size: cover;position: relative; }
+ul { list-style: none }
+.clear { clear: both; }
+a:hover,a:focus { text-decoration: none !important;outline: 0; }
+.aligncenter { margin: 0 auto !important; }
+body.modal-open { padding-right: 0 !important; }
+iframe { border: 0; }
+.vh-75 { height: 75vh !important; }
+.wp-block-image img { height: auto; }
+.wp-block-media-text__media img { height: auto;max-width: 100%;width: auto; }
+.frm_error_style { display: none; }
+.frm_ajax_loading { display: block; }
+.font-weight-thin { font-weight: 100; }
+.font-weight-exlight { font-weight: 200; }
+.font-weight-medium { font-weight: 500; }
+.flex-container-160 { padding-left: 160px !important;padding-right: 160px !important; }
+.padding-50 { padding: 50px 0; }
+.pt-100 { padding-top: 100px; }
+.mh-0 { min-height: 0 !important; }
+
+.social-link-top { margin-right: 0.5rem; }
+.social-link-top.last { margin-right: 0; }
+.social-link-top a { color: #fff; }
+.social-link-top a:hover { color: #fff; }
+
+.border-white-fade-right { border-right: 1px solid rgb(255 255 255 / 30%); }
+.border-white-fade-bottom { border-bottom: 1px solid rgb(255 255 255 / 30%); }
+
+/*Homepage Style start*/
+
+#service-section .wp-block-media-text__content { padding: 0 0 0 15px; }
+.main-heading { display: flex; align-items: center; line-height: 1; }
+.main-heading img { margin-right: 0.7rem; }
+
+.home-blog .card-img-overlay { background: linear-gradient( 90deg, #1eb089, #7c49ab );opacity: 0;transition: 0.5s opacity ease-in-out;display: flex; align-items: center; flex-direction: column; justify-content: center; }
+.home-blog:hover .card-img-overlay { opacity: 1; }
+.home-blog .card-img-overlay p { margin-bottom: 15px;font-size: 13px;text-transform: uppercase; }
+button.wp-button { background: transparent; border-color: #fff; box-shadow: none; border: 1px solid #fff; color: #fff; border-radius: 200px; padding: 5px 30px; }
+.home-blog-component { font-size: 14px;font-weight: 300;color: #818181; }
+.home-blog-content h4 { font-size: 14px;color: #818181;text-transform: uppercase; }
+
+/*Homepage Style End*/
+
+.footer-bottom { border-top: 1px solid rgb(255 255 255 / 30%); }
+.footer-content-details p { color: #818181;font-size: 12px;font-weight: 300; }
+.footer-content-details p:nth-child(1), .footer-content-details p:nth-child(3) { margin-bottom: 35px; }
+.footer-media { margin-bottom: 20px; }
+.footer-media h2 { font-size: 15px;line-height: 1.2;font-weight: 400;color: #9a9a9a;margin-bottom: 0;text-transform: uppercase; }
+
+.subscribe-form input[type="text"] { font-size: 14px; height: 38px; }
+.subscribe-form button.btn { background-color: #1eb089;font-size: 14px;height: 38px; }
+.subscribe-form input[type="text"]:focus, .subscribe-form button:focus { box-shadow: none; }
+
+.footer-menu ul { padding: 0;margin: 0;  }
+.footer-menu ul li a { font-weight: 300;font-size: 14px;color: #818181; }
+.footer-menu ul li a:before { content: "\f105";font-family: 'Font Awesome 5 Free';font-weight: 900;margin-right: 5px; }
+.footer-menu ul li a:hover, .footer-menu ul li a:focus { text-decoration: none;outline: 0;color: #818181; }
+.footer-menu li.active a{ color: #818181; }
+
+.opening-hour .table td { padding: 0.25rem;color: var(--main-color); }
+
+#copyright { margin: 0; }
+#copyright i { vertical-align: sub; }
+
+.social-link-bottom { margin-right: 1em; }
+.social-link-bottom.last { margin-right: 0; }
+.social-link-bottom a { color: var(--main-color); }
+.social-link-bottom a:hover { color: var(--main-color); }
+
+.footer-info ul { line-height: 1.4; margin: 0; display: flex;justify-content: center;padding: 0;font-size: 13px;font-weight: 300; }
+.footer-info ul li:after { content: '|';padding: 0 5px; }
+.footer-info ul li:last-child:after { content: '';padding: 0 }
+.footer-info p { margin: 0; display: inline-block; }
+.footer-concern-link a { color: #fff;  }
+
+.inner-banner-title {display: flex;justify-content: center;flex-flow: column wrap; }
+.inner-content-section h1, .inner-content-section h2, .inner-content-section h3, .inner-content-section h4, .inner-content-section h5, .inner-content-section h6 { margin-bottom: 1rem; }
+
+div#recent-posts-2 ul { padding: 0; }
+
+.blog-image { width: 98px; height: 98px; }
+.blog-content { line-height: 1.4;border-top: 0;position: relative; }
+.blog-content h1 { margin: 0;line-height: 1.2;font-size:35px;font-family: "Rajdhani"; }
+.blog-content h1 a, .blog-content h1 a:hover, .blog-content h1 a:focus { color: #262160; }
+.blog-content p { font-size: 15px;margin: 0;font-weight: 400;padding-bottom: 10px;color: #717171; }
+.blog-content a.btn-arrow-right-black { background: #262160;margin: 5px 0px 0px 0px;padding: 12px 30px;display: inline-block;border-radius: 5px;color: #fff;font-size: 1.25em; }
+
+.entry-content.inner h3:after { content: "";display: none; }
+.entry-header h1 { font-size: 40px;font-weight: 400; }
+.entry-content p { font-size: 15px;color: #00141f;font-weight: 400; }
+
+.wp-block-latest-posts li a { color: #070248; font-size: 22px; font-weight: 600; }
+
+
+/*dropdown menu*/
+.dropdown-menu{padding: 0 !important;background: #fff !important;-webkit-box-shadow: none !important;box-shadow: none !important;}
+.dropdown-menu > li {padding: 0 !important;}
+.dropdown-menu > li > a { color: #060706 !important; padding: 5px 10px !important; }
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { text-decoration: none !important; }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{ background: none !important;color:#ff7e00 !important; }
+.dropdown:hover .dropdown-menu {display: block;}
+
+span.nav-next {float: right;}
+.pagination { margin: 20px 0;justify-content: center; }
+.pagination>li>a, .pagination>li>span { position: relative;float: left;padding: 6px 12px;line-height: 1.42857143;text-decoration: none;color: #337ab7;background-color: #fff;border: 1px solid #dee2e6;}
+.pagination>li>a:hover { z-index: 2; color: #0056b3; text-decoration: none; background-color: #e9ecef; border-color: #dee2e6; }
+.pagination>li:first-child>a, .pagination>li:first-child>span {margin-left: 0;border-bottom-left-radius: 4px;border-top-left-radius: 4px;}
+.pagination>li {display: inline;}
+
+.pagination__controls { text-align: center;clear: both; }
+.pagination__controls ul.pagination { padding: 0; justify-content: center; }
+.pagination__controls > .pagination > .active > a, .pagination__controls > .pagination > .active > span, .pagination__controls > .pagination > .active > a:hover, .pagination__controls > .pagination > .active > span:hover, .pagination__controls > .pagination > .active > a:focus, .pagination__controls > .pagination > .active > span:focus { color: #dd110d;border-radius: 0; }
+.pagination__controls > .pagination > li > a, .pagination__controls > .pagination > li > span { color: #000; border-radius: 0;padding: 5px 10px; margin-right: 5px;margin-left: 0; }
+.pagination__controls > .pagination > li:last-child > a, .pagination__controls > .pagination > li:last-child > span { border-radius: 0; }
+.pagination__controls > .pagination > li:first-child > a, .pagination__controls > .pagination > li:first-child > span { margin-left: 0;border-radius: 0; }
+
+div#wprmenu_menu { line-height: 1.4; }

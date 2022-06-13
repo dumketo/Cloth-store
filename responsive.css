@@ -1,0 +1,122 @@
+/*******Mozilla Firefox Hack*******/
+@-moz-document url-prefix() { 
+    .subscribe-form button.btn { width: 38.5%; }
+}
+
+/*******Internet Explorer Hack*******/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .subscribe-form button.btn { width: 38.5%; }
+}
+
+/*******Safari Hack*******/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+}
+
+@media all and (min-width:0) and (max-width:768px) {
+    .col { flex-basis: auto !important; }
+    .home-ptb { padding-top: 50px !important; padding-bottom: 50px !important; }
+    .flex-container-160 { padding-left: 0 !important;padding-right: 0 !important; }
+    .banner-sec, .bannerservice { min-height: 380px !important; }
+    .inner-banner-section, .inner-banner-title { min-height: 150px !important; }
+    .inner-banner-section h1 { font-size: 2rem !important; }
+    .footer-bottom { margin-bottom: 50px !important; }
+    .main-footer-logo img { margin: 0 auto; }
+    #copyright { text-align: center;margin-bottom: 10px; }
+
+    .home-product .mkdf-pl-inner .mkdf-pl-image { height: 250px !important; }
+    .offmen { margin-top: 20px; }
+    #service-section .gutentor-single-column .gutentor-col-wrap { border: 0; }
+    #service-section .wp-block-media-text.is-stacked-on-mobile { margin-bottom: 15px; }
+    #service-section .is-stacked-on-mobile .wp-block-media-text__content { grid-row: 1; }
+    #service-section .wp-block-media-text__content { padding: 0 0 0 75px; }
+}
+
+/*******Mobile General Landscape*******/ 
+@media all and (min-width:0) and (max-width:768px) and (orientation: landscape) {
+    .header-wrap .brand a { width: 20% !important; }
+
+}
+
+
+/*==========i-phone portrait media query==============*/
+@media all and (min-width:320px) and (max-width:359px) {
+    
+}
+/*============i-phone landscape media query================*/
+@media all and (min-width:480px) and (max-width:600px) {
+    
+}
+/*==========samsung s4 portrait media query==============*/
+@media only screen and (min-width:360px) and (max-width:374px) {
+    
+    
+}
+/*==========samsung s4 landscape media query================*/
+@media (min-width:601px) and (max-width:650px) {
+    
+}
+
+/*==========i-phone 6 portrait media query==============*/
+@media only screen and (min-width:375px) and (max-width:479px) { 
+    
+}
+
+/*============i-phone 6 landscape media query================*/
+@media (min-width:651px) and (max-width:767px) {
+    
+}
+
+/*============i-phone 6 Plus landscape media query================*/
+@media (min-width:668px) and (max-width:767px) {
+    
+}
+
+
+/*============i-tab portrait media query================*/
+@media (min-width:768px) and (max-width:1023px) {
+    .header-wrap .brand a { width: 13% !important; }
+    .flex-container-160 { padding-left: 0px !important;padding-right: 0px !important; }
+    .work-block .wp-block-group__inner-container { padding: 145px 20px 0px 110px; }
+    
+
+
+}
+/*============i-tab landscape media query================*/
+@media (min-width:1024px) and (max-width:1279px) {
+    .header-wrap .brand a { width: 13% !important; }
+    .flex-container-160 { padding-left: 0px !important;padding-right: 0px !important; }
+    #content-section .gutentor-element-advanced-text .gutentor-text, #content-section .first-h2 { font-size: 45px !important; }
+    #content-section .gutentor-col-wrap { padding: 0 !important; }
+    .work-block { flex-basis: 50% !important; max-width: 50% !important; }
+    .work-block .wp-block-group__inner-container { padding: 145px 20px 0px 158px; }
+    .footer-bottom { margin-bottom: 37px !important; }
+}
+
+/*============Samsung Galaxy Note 10.1 landscape media query================*/
+@media (min-width:1280px) and (max-width:1299px) { 
+    .flex-container-160 { padding-left: 15px !important;padding-right: 15px !important; }
+    
+}
+
+
+@media (min-width: 1300px) and (max-width:1499px) {   
+    .flex-container-160 { padding-left: 0px !important;padding-right: 0px !important; }
+    .call-now a, .call-now a:hover, .call-now a:focus { font-size: 18px; }
+    #content-section .gutentor-col-wrap { padding-right: 50 !important; }
+    .work-block .wp-block-group__inner-container .gutentor-element-advanced-text .gutentor-text { font-size: 18px !important; }
+    
+}
+
+@media (min-width: 1500px) and (max-width:1700px) { 
+    .flex-container-160 { padding-left: 0px !important;padding-right: 0px !important; }
+    
+    
+}
+/*============19.5" to 23" device media query================*/ 
+@media only screen and (min-width: 2001px) {    
+    
+}
+/*============27" large device media query================*/ 
+@media only screen and (min-width : 2400px) {
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img { width: 100%; }
+}      
