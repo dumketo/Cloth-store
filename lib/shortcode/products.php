@@ -77,7 +77,7 @@ function dumketo_product_cat($atts){
     <div id="product-<?php echo $cat ?>" class="owl-carousel home-product-slide">
         <?php
         $cat = sanitize_title($atts['cat']);
-        $part_args = array( 'post_type' => 'product', 'posts_per_page' => 12, 'order' => 'DESC', 'tax_query' => array( array( 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => $cat, ), ), );
+        $part_args = array( 'post_type' => 'product', 'posts_per_page' => 12, 'order' => 'DESC', 'tax_query' => array( array( 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => $cat, ), ), 'orderby' => 'meta_value_num', 'tax_query' => array( array( 'key' => 'total_sales', 'value' => 0, 'compare' => '>', ), ), );
         $loop = new WP_Query( $part_args );
         while ( $loop->have_posts() ) : $loop->the_post(); 
         global $product; ?>
